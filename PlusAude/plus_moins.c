@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+#include <unistd.h>
 
 void plus_moins(int choix_joueuer, int valeur_a_trouver)
 {
@@ -17,7 +19,8 @@ void plus_moins(int choix_joueuer, int valeur_a_trouver)
 int main()
 {
 	
-	int n=10;
+	srand(time(NULL));
+	int n=rand()%100;
 	int v;
 	printf("Devienez un entier: ");
 	scanf("%d", &v);
