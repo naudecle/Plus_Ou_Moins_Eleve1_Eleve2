@@ -32,8 +32,24 @@ int main()
 	srand(time(NULL));
 	int n=rand()%100;
 	int v;
-	int p=5;
-	printf("Devienez un entier: ");
+	int q;
+	int p;
+	printf("1.facile, 2. moyen, 3. Difficile \n");
+	printf("Veuillez choisir un niveau entre 1,2 et 3: ");
+	scanf("%d", &p);
+	if (q==1)
+	{
+		/* code */
+		p=100000;
+	}
+	else if (q==2)
+	{
+		/* code */
+		p=25;
+	}
+	else
+		p=10;
+	printf("Devinez un entier: ");
 	plus_moins(v,n,p);
 	return 0;
 }
